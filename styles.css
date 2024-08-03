@@ -12,13 +12,13 @@ body {
 header {
     background-color: #a8dadc;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
     font-size: 1.2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-position: relative;
+    position: relative;
     z-index: 10; /* Asegura que el header esté por encima del contenido*/
 }
 
@@ -264,6 +264,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+      nav {
+        display: flex;
+        width: 100%;
+    }
+    
     nav ul {
         display: none;
         flex-direction: column;
@@ -279,6 +284,11 @@ footer {
         margin: 10px 0;
     }
 
+    .nav-right {
+        margin-left: auto;
+        
+    }
+
     nav .menu-toggle {
         display: flex;
     }
@@ -286,7 +296,8 @@ footer {
     .carousel {
         max-width: 100%;
     }
-nav ul.menu-open {
+
+    nav ul.menu-open {
         display: flex;
     }
 
